@@ -9,24 +9,24 @@
 <body>
   <h1 align="left">Ficha de Datos</h1>
   <section align="left">
-    <form action="">
+    <form onsubmit="almacenarDatos(); return false;">
       <div>
         <label for="nombre">Ingresa tu nombre:</label>
-        <input id="nombre" type="text"required="">
+        <input id="nombre" type="text" pattern="[a-zA-Z]{3,100}" autofocus required>
       </div><br/>
       <div>
         <label for="apellido">Ingresa tu apellido:</label>
-        <input id="apellido" type="text"required="">
+        <input id="apellido" type="text" pattern="[a-zA-Z]{3,100}" required="">
       </div><br/>
       <div>
         <label for="dni">Ingresa tu DNI:</label>
-        <input id="dni" type="text" pattern="^[4|7|0]\d{7}$" required>
+        <input id="dni" type="number" pattern="\d{7}$" required>
       </div><br/>
       <div>
         <label for="direccion">Ingresa tu dirección:</label>
         <input id="direccion" type="text" required>
       </div><br/>
-      <button type="button" onclick="almacenarDatos()">Enviar Datos</button>
+      <<button></button> onclick="almacenarDatos()">Enviar Datos</button>
     </form>
   </section>
   <div id="datos"></div>
